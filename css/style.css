@@ -9,29 +9,29 @@ body {
     background-size: cover;
     align-items: center;
     position: relative; }
-    body .main_page .container {
-      align-items: center; }
-    body .main_page header nav {
+    body .main_page header .navbar-default {
       background-color: transparent;
       border: none;
       background-image: none;
       box-shadow: none;
       padding-top: 30px; }
-      body .main_page header nav .button-rounded {
-        padding-top: 7px !important;
-        padding-bottom: 7px !important; }
-        body .main_page header nav .button-rounded a {
+      body .main_page header .navbar-default .button-rounded {
+        padding-top: 7px;
+        padding-bottom: 7px; }
+        body .main_page header .navbar-default .button-rounded a {
           border: 1px solid white;
           border-radius: 50px;
-          padding: 8px 20px !important; }
-      body .main_page header nav li a {
+          padding: 8px 20px; }
+          body .main_page header .navbar-default .button-rounded a:hover {
+            border: 1px solid #19bd9a;
+            color: #19bd9a; }
+      body .main_page header .navbar-default li a {
         font-size: 16px;
-        color: white !important; }
-        body .main_page header nav li a:hover {
-          font-weight: bold; }
+        color: white; }
+        body .main_page header .navbar-default li a:hover {
+          color: #19bd9a; }
     body .main_page h1 {
       font-family: "Roboto", sans-serif;
-      text-transform: uppercase;
       color: white;
       font-size: 35px;
       text-align: center;

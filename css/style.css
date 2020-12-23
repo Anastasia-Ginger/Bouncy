@@ -1,6 +1,30 @@
 @import url(bootstrap-theme.css);
 @import url(bootstrap.css);
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap");
+h3 {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 34px;
+  margin-bottom: 46px;
+  color: #333b46;
+  letter-spacing: 2px;
+  font-weight: 300; }
+
+p {
+  color: #81868e;
+  line-height: 28px; }
+
+.comment {
+  max-width: 480px;
+  margin: auto;
+  margin-bottom: 60px; }
+
+.contrast-bg {
+  background-color: #19bd9a; }
+
+.contrast-font {
+  color: #19bd9a; }
+
 body {
   font-family: "Open Sans", sans-serif; }
   body .main_page {
@@ -62,18 +86,6 @@ body {
         font-size: 16px;
         padding-top: 12px; }
 
-h3 {
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  margin-top: 34px;
-  margin-bottom: 46px;
-  color: #333b46;
-  letter-spacing: 2px;
-  font-weight: 300; }
-
-p {
-  color: #81868e; }
-
 .this-is-bouncy {
   padding-top: 80px;
   padding-bottom: 76px; }
@@ -95,23 +107,105 @@ p {
   background-color: #f3f3f3;
   padding-top: 78px;
   padding-bottom: 100px; }
-  .details-about-B p {
-    max-width: 480px;
-    margin: auto;
+  .details-about-B .items {
     margin-bottom: 60px; }
+    .details-about-B .items div {
+      display: inline-block;
+      width: 54px;
+      height: 54px;
+      background-color: #81868e;
+      border-radius: 50%;
+      margin: 0px 13px;
+      text-align: center; }
+      .details-about-B .items div i {
+        font-size: 30px;
+        color: white;
+        padding-top: 12px; }
+    .details-about-B .items .contrast-bg {
+      background-color: #19bd9a; }
+  .details-about-B h4 {
+    font-size: 20px;
+    color: #464646;
+    margin-bottom: 40px;
+    letter-spacing: 1px; }
+  .details-about-B .p-16 {
+    font-size: 16px; }
+  .details-about-B span {
+    font-weight: bold; }
 
-.management .item .soc a {
-  display: inline-block;
-  width: 26px;
-  height: 26px;
-  background-color: #dedede;
-  border-radius: 50%;
-  margin-left: 5px;
-  text-align: center;
-  line-height: 26px; }
-
-.management .item .soc a i {
-  font-size: 12px;
-  color: white; }
+.featured-pj {
+  padding-top: 78px; }
+  .featured-pj .project-example {
+    display: flex;
+    flex-wrap: wrap; }
+    .featured-pj .project-example .photo-example {
+      width: 25%;
+      position: relative;
+      transition: 1s; }
+      @media screen and (max-width: 768px) {
+        .featured-pj .project-example .photo-example {
+          width: 50%; } }
+      .featured-pj .project-example .photo-example img {
+        width: 100%; }
+      .featured-pj .project-example .photo-example:after {
+        content: "";
+        display: block;
+        transition: 0.5s; }
+      .featured-pj .project-example .photo-example:hover::after {
+        width: 100%;
+        display: block;
+        height: 100%;
+        background-color: rgba(21, 21, 21, 0.85);
+        position: absolute;
+        top: 0;
+        color: white;
+        z-index: 1; }
+      .featured-pj .project-example .photo-example:before {
+        content: "";
+        display: block; }
+      .featured-pj .project-example .photo-example:hover::before {
+        content: "VINTAGE";
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        display: block;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        left: 42%;
+        z-index: 2; }
+    .featured-pj .project-example .wide {
+      width: 50%; }
+      @media screen and (max-width: 768px) {
+        .featured-pj .project-example .wide {
+          width: 100%; } }
+      .featured-pj .project-example .wide img {
+        width: 100%; }
+  .featured-pj .bg {
+    background-image: url("../images/green-bg-example_02.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 114px; }
+    .featured-pj .bg .submit {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 40px;
+      padding-bottom: 40px; }
+      .featured-pj .bg .submit p {
+        color: white; }
+        .featured-pj .bg .submit p span {
+          font-weight: bold; }
+      .featured-pj .bg .submit a {
+        border: 1px solid white;
+        border-radius: 50px;
+        padding: 8px 30px;
+        font-size: 16px;
+        color: white;
+        text-decoration: none; }
+        .featured-pj .bg .submit a:hover {
+          background-color: white;
+          color: #19bd9a; }
 
 /*# sourceMappingURL=style.css.map */

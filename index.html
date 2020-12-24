@@ -8,11 +8,12 @@
     <title>Bouncy</title>
     <script src="https://kit.fontawesome.com/b7b8f8e213.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
 </head>
 <body>
 <section class="main_page">
-    <div class="container text-center">
         <header>
+            <div class="container text-center">
             <nav class="navbar navbar-default">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -25,24 +26,29 @@
                     <a class="navbar-brand" href="#"><img src="images/logo_03.png" alt="logo"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-right" id="menu-yak">
                         <li class="button-rounded"><a href="#">Hello</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="#Team">Team</a></li>
+                        <li><a href="#Blog">Blog</a></li>
+                        <li><a href="#Contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
+            </div>
+            <div id="back-top">
+                <a href="#" id="up"><i class="fas fa-angle-up"></i></a>
+            </div>
         </header>
+    <div class="container text-center">
         <h1 class="text-uppercase">We are code cafe</h1>
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
         <div class="chevron"><i class="fas fa-chevron-down"></i></div>
     </div>
 </section>
-<section class="about">
+<section class="about" id="About">
     <div class="container this-is-bouncy">
         <div class="row">
             <div class="col-md-6 col-md-offset-1">
@@ -51,14 +57,14 @@
                     deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
                     provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
                     fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
-                <a href="#">Read more</a>
+                <a href="#details">Read more</a>
             </div>
             <div class="col-md-3 col-md-offset-1">
                 <img src="images/mobile-phone_03.jpg" alt="image">
             </div>
         </div>
     </div>
-    <div class="details-about-B">
+    <div class="details-about-B" id="details">
         <div class="container text-center">
             <h3 class="text-uppercase">DetailS ABOUT BOUNCY</h3>
             <p class="text-center comment">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
@@ -80,7 +86,8 @@
                 </p>
                 <p class="col-md-5 col-md-offset-1"> At vero eos et accusamus et iusto odio dignissimos ducimus qui
                     blanditiis praesentium voluptatum deleniti atque <span> corrupti quos </span> dolores et quas
-                    molestias <span class="contrast-font"> excepturi</span> sint occaecati cupiditate non provident, <span> similique
+                    molestias <span class="contrast-font"> excepturi</span> sint occaecati cupiditate non provident,
+                    <span> similique
                 </span> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum
                     quidem r</p>
             </div>
@@ -105,7 +112,7 @@
         </div>
     </div>
 </section>
-<section class="services">
+<section class="services" id="Services">
     <div class="container text-center">
         <h3 class="text-uppercase">Our Services</h3>
         <p class="text-center comment">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
@@ -114,7 +121,8 @@
             <div class="col-sm-6">
                 <div class="col-xs-3">
                     <ul class="nav nav-tabs tabs sideways">
-                        <li class="active"><a href="#first-serv" data-toggle="tab"><i class="fas fa-headset"></i></a></li>
+                        <li class="active"><a href="#first-serv" data-toggle="tab"><i class="fas fa-headset"></i></a>
+                        </li>
                         <li><a href="#second-serv" data-toggle="tab"><i class="fas fa-paint-roller"></i></a></li>
                         <li><a href="#third-serv" data-toggle="tab"><i class="fas fa-gamepad"></i></a></li>
                         <li><a href="#fourth-serv" data-toggle="tab"><i class="fas fa-plug"></i></a></li>
@@ -127,24 +135,28 @@
                             <p class="p-16">At vero eos et <span class="contrast-font"> accusamus </span>et iusto odio
                                 dignissimos <span>ducimus</span> qui blanditiis praesentium </p>
                             <p> quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-                                <span class="contrast-font"> similique sunt </span> in culpa qui officia deserunt mollitia
+                                <span class="contrast-font"> similique sunt </span> in culpa qui officia deserunt
+                                mollitia
                                 animi, id est laborum et dolorum fuga. </p>
                         </div>
                         <div class="tab-pane text-left" id="second-serv">
                             <h4>Another one</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, aperiam at corporis cupiditate
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, aperiam at corporis
+                                cupiditate
                                 dolorum eos fugiat incidunt, labore laboriosam magnam maiores nobis obcaecati odit omnis
                                 perferendis provident quos sint, ut.</p>
                         </div>
                         <div class="tab-pane text-left" id="third-serv">
                             <h4>Your ad could be here</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corporis cumque dele
-                                niti dignissimos dolores doloribus exercitationem magnam minus necessitatibus nemo nostrum,
+                                niti dignissimos dolores doloribus exercitationem magnam minus necessitatibus nemo
+                                nostrum,
                                 perspiciatis quis soluta tempora, ut. Ab ipsa iste libero?</p>
                         </div>
                         <div class="tab-pane text-left" id="fourth-serv">
                             <h4>Last one</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At explicabo fugit non nulla odio
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At explicabo fugit non nulla
+                                odio
                                 officiis quaerat rerum sapiente. Aperiam aspernatur ea esse hic illo maiores modi odio
                                 quam ratione saepe?</p>
                         </div>
@@ -152,9 +164,12 @@
                 </div>
             </div>
             <div class="col-sm-6 right-part">
-                <div class="percents"><img src="images/percent_03.jpg"> <p>Branding</p></div>
-                <div class="percents"><img src="images/percent_03.jpg"> <p>Branding</p></div>
-                <div class="percents"><img src="images/percent_03.jpg"> <p>Branding</p></div>
+                <div class="percents"><img src="images/percent_03.jpg">
+                    <p>Branding</p></div>
+                <div class="percents"><img src="images/percent_03.jpg">
+                    <p>Branding</p></div>
+                <div class="percents"><img src="images/percent_03.jpg">
+                    <p>Branding</p></div>
             </div>
         </div>
     </div>
@@ -173,19 +188,19 @@
         </div>
     </div>
 </section>
-<section class="portfolio">
+<section class="portfolio" id="Portfolio">
     <div class="container">
         <h3 class="text-center text-uppercase">The Portfolio</h3>
         <p class="text-center comment">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
             praesentium</p>
-    </div>
         <div class="grid-container">
             <div class="gal-photo">
                 <img class='grid-item grid-item-1' src='images/photo-1.jpg' alt=''>
                 <div class="overlay">
                     <div class="text-hover text-left">
                         <h3 class="text-uppercase contrast-font text-left">title here</h3>
-                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium</p>
                         <div class="text-left"><a href="#"><i class="fas fa-link"></i></a>
                             <a href="#"><i class="far fa-heart"></i></a></div>
                     </div>
@@ -196,7 +211,8 @@
                 <div class="overlay">
                     <div class="text-hover text-left">
                         <h3 class="text-uppercase contrast-font text-left">title here</h3>
-                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium</p>
                         <div class="text-left"><a href="#"><i class="fas fa-link"></i></a>
                             <a href="#"><i class="far fa-heart"></i></a></div>
                     </div>
@@ -207,7 +223,8 @@
                 <div class="overlay">
                     <div class="text-hover text-left">
                         <h3 class="text-uppercase contrast-font text-left">title here</h3>
-                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium</p>
                         <div class="text-left"><a href="#"><i class="fas fa-link"></i></a>
                             <a href="#"><i class="far fa-heart"></i></a></div>
                     </div>
@@ -218,7 +235,8 @@
                 <div class="overlay">
                     <div class="text-hover text-left">
                         <h3 class="text-uppercase contrast-font text-left">title here</h3>
-                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium</p>
                         <div class="text-left"><a href="#"><i class="fas fa-link"></i></a>
                             <a href="#"><i class="far fa-heart"></i></a></div>
                     </div>
@@ -229,7 +247,8 @@
                 <div class="overlay">
                     <div class="text-hover text-left">
                         <h3 class="text-uppercase contrast-font text-left">title here</h3>
-                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium</p>
                         <div class="text-left"><a href="#"><i class="fas fa-link"></i></a>
                             <a href="#"><i class="far fa-heart"></i></a></div>
                     </div>
@@ -240,7 +259,8 @@
                 <div class="overlay">
                     <div class="text-hover text-left">
                         <h3 class="text-uppercase contrast-font text-left">title here</h3>
-                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium</p>
                         <div class="text-left"><a href="#"><i class="fas fa-link"></i></a>
                             <a href="#"><i class="far fa-heart"></i></a></div>
                     </div>
@@ -251,7 +271,8 @@
                 <div class="overlay">
                     <div class="text-hover text-left">
                         <h3 class="text-uppercase contrast-font text-left">title here</h3>
-                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium</p>
                         <div class="text-left"><a href="#"><i class="fas fa-link"></i></a>
                             <a href="#"><i class="far fa-heart"></i></a></div>
                     </div>
@@ -262,7 +283,8 @@
                 <div class="overlay">
                     <div class="text-hover text-left">
                         <h3 class="text-uppercase contrast-font text-left">title here</h3>
-                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium</p>
                         <div class="text-left"><a href="#"><i class="fas fa-link"></i></a>
                             <a href="#"><i class="far fa-heart"></i></a></div>
                     </div>
@@ -273,7 +295,8 @@
                 <div class="overlay">
                     <div class="text-hover text-left">
                         <h3 class="text-uppercase contrast-font text-left">title here</h3>
-                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium</p>
                         <div class="text-left"><a href="#"><i class="fas fa-link"></i></a>
                             <a href="#"><i class="far fa-heart"></i></a></div>
                     </div>
@@ -284,7 +307,8 @@
                 <div class="overlay">
                     <div class="text-hover text-left">
                         <h3 class="text-uppercase contrast-font text-left">title here</h3>
-                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium</p>
                         <div class="text-left"><a href="#"><i class="fas fa-link"></i></a>
                             <a href="#"><i class="far fa-heart"></i></a></div>
                     </div>
@@ -295,7 +319,8 @@
                 <div class="overlay">
                     <div class="text-hover text-left">
                         <h3 class="text-uppercase contrast-font text-left">title here</h3>
-                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium</p>
                         <div class="text-left"><a href="#"><i class="fas fa-link"></i></a>
                             <a href="#"><i class="far fa-heart"></i></a></div>
                     </div>
@@ -306,18 +331,43 @@
                 <div class="overlay">
                     <div class="text-hover text-left">
                         <h3 class="text-uppercase contrast-font text-left">title here</h3>
-                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium</p>
                         <div class="text-left"><a href="#"><i class="fas fa-link"></i></a>
                             <a href="#"><i class="far fa-heart"></i></a></div>
                     </div>
                 </div>
             </div>
         </div>
-    <div class="container start-pj">
-
+        <div class="start-pj text-center">
+            <p>At vero eos et <strong>accusamus</strong> et iusto odio <strong>dignissimos</strong> ducimus qui
+                blanditiis </p>
+            <a href="#">Start project</a>
+        </div>
+    </div>
+</section>
+<section class="team" id="Team">
+    <div class="container">
+        <h3 class="text-center text-uppercase">The Team</h3>
+        <p class="text-center comment">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+            praesentium</p>
+        <div class="owl-carousel">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1"><img src="images/creative_director_07.jpg"></div>
+                <div class="col-md-4 col-md-offset-3 text-right">
+                    <h4>Abdullah Noman</h4>
+                    <p class="text-uppercase"><em>Creative Director, Code Cafe</em></p>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                </div>
+            </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+        </div>
     </div>
 </section>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/owl.carousel.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

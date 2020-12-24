@@ -29,6 +29,13 @@ p {
 .contrast-font {
   color: #19bd9a; }
 
+.d-flex {
+  display: flex;
+  flex-wrap: wrap; }
+
+.j-content-center {
+  justify-content: center; }
+
 body {
   font-family: "Open Sans", sans-serif; }
   body .main_page {
@@ -531,5 +538,98 @@ body {
         border: 1px solid #b2b3b3; }
       .blog .owl-carousel .owl-dots .owl-dot.active span {
         background-color: #b2b3b3; }
+
+.price {
+  background-color: #f3f3f3;
+  padding-top: 50px;
+  padding-bottom: 90px; }
+  .price .offer-price {
+    width: 236px;
+    display: inline-block;
+    height: 300px;
+    background-color: white;
+    margin: 10px 32px;
+    position: relative; }
+    .price .offer-price:hover .price-hover {
+      opacity: 1; }
+    .price .offer-price h4 {
+      display: inline-block;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      background-color: #19bd9a;
+      width: 100%;
+      padding-top: 26px;
+      padding-bottom: 26px;
+      margin: 0; }
+    .price .offer-price span {
+      display: inline-block;
+      font-size: 42px;
+      font-family: "Roboto", sans-serif;
+      margin-top: 66px;
+      font-weight: bold; }
+    .price .offer-price .price-note {
+      font-size: 20px; }
+  .price .price-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between; }
+    .price .price-hover p {
+      padding: 34px 34px 10px; }
+    .price .price-hover a {
+      display: inline-block;
+      width: 100%;
+      color: white;
+      background-color: #19bd9a;
+      font-size: 16px;
+      text-decoration: none;
+      padding-top: 26px;
+      padding-bottom: 26px; }
+      .price .price-hover a:hover {
+        color: #19bd9a;
+        background-color: white; }
+
+.subscribe {
+  background-image: url("../images/blog-bg_10.jpg");
+  background-size: cover;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 90px; }
+  .subscribe h3 {
+    color: white; }
+  .subscribe .form-group {
+    max-width: 360px;
+    width: 100%; }
+    .subscribe .form-group .form-control {
+      width: 100%;
+      background-color: transparent;
+      border-radius: 0px;
+      border: 1px solid #81868e;
+      height: 40px;
+      color: white;
+      -webkit-box-shadow: none; }
+  .subscribe .btn {
+    border-radius: 0px;
+    margin-left: 8px;
+    height: 40px;
+    background-color: #19bd9a;
+    color: white;
+    max-width: 152px;
+    width: 100%;
+    border: none;
+    font-weight: 300; }
+
+.contact .our_contacts {
+  background-color: #f3f3f3;
+  padding-top: 50px;
+  padding-bottom: 90px; }
 
 /*# sourceMappingURL=style.css.map */

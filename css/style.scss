@@ -41,6 +41,13 @@ p {
 .contrast-font {
   color: $contrast-color;
 }
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.j-content-center{
+  justify-content: center;
+}
 
 body {
   font-family: $main-font;
@@ -664,4 +671,111 @@ body {
     }
   }
 }
-
+.price{
+  background-color: #f3f3f3;
+  padding-top: 50px;
+  padding-bottom: 90px;
+  .offer-price{
+    width: 236px;
+    display: inline-block;
+    height: 300px;
+    background-color: white;
+    margin: 10px 32px;
+    position: relative;
+    &:hover .price-hover {
+      opacity: 1;
+    }
+    h4{
+      display: inline-block;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      background-color: $contrast-color;
+      width: 100%;
+      padding-top: 26px;
+      padding-bottom: 26px;
+      margin: 0;
+    }
+    span{
+      display: inline-block;
+      font-size: 42px;
+      font-family: $title-font;
+      margin-top: 66px;
+      font-weight: bold;
+    }
+    .price-note{
+      font-size: 20px;
+    }
+  }
+  .price-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    p {
+      padding: 34px 34px 10px;
+    }
+    a {
+      display: inline-block;
+      width: 100%;
+      color: white;
+      background-color: $contrast-color;
+      font-size: 16px;
+      text-decoration: none;
+      padding-top: 26px;
+      padding-bottom: 26px;
+      &:hover{
+        color: $contrast-color;
+        background-color: white;
+      }
+    }
+  }
+}
+.subscribe{
+    background-image: url("../images/blog-bg_10.jpg");
+    background-size: cover;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 90px;
+    h3{
+      color: white;
+    }
+  .form-group{
+    max-width: 360px;
+    width: 100%;
+    .form-control{
+      width: 100%;
+      background-color: transparent;
+      border-radius: 0px;
+      border: 1px solid #81868e;
+      height: 40px;
+      color: white;
+      -webkit-box-shadow: none;
+    }
+  }
+  .btn {
+    border-radius: 0px;
+    margin-left: 8px;
+    height: 40px;
+    background-color: $contrast-color;
+    color: white;
+    max-width: 152px;
+    width: 100%;
+    border: none;
+    font-weight: 300;
+  }
+}
+.contact {
+  .our_contacts{
+    background-color: #f3f3f3;
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+}

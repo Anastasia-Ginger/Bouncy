@@ -115,7 +115,8 @@ body {
         font-weight: 300;
         margin-bottom: 36px;
         letter-spacing: 10px;
-        width: 100%; }
+        width: 100%;
+        line-height: 65px; }
       body .main_page .main-screen p {
         max-width: 620px;
         font-size: 16px;
@@ -297,8 +298,13 @@ body {
 
 .services {
   padding-top: 80px; }
+  .services .row {
+    display: inline-block; }
   .services .serv-parts {
     padding-bottom: 120px; }
+    .services .serv-parts .nav-tabs {
+      max-width: 80px;
+      display: inline-block; }
     .services .serv-parts .tabs, .services .serv-parts .nav, .services .serv-parts .nav-tabs {
       border-bottom: none; }
       .services .serv-parts .tabs li.active a, .services .serv-parts .nav li.active a, .services .serv-parts .nav-tabs li.active a {
@@ -344,25 +350,28 @@ body {
   background-image: url("../images/imressed-bg_02.jpg");
   background-size: cover;
   width: 100%;
-  height: 420px;
   padding-top: 80px;
   padding-bottom: 80px; }
+  .impressed h3 {
+    color: white;
+    margin-bottom: 60px; }
+  .impressed p {
+    color: #b2b3b3; }
+  .impressed .by-line {
+    color: #b2b3b3;
+    margin-top: 30px; }
+    .impressed .by-line span {
+      font-weight: bold; }
+    .impressed .by-line .contrast-font {
+      font-weight: normal; }
   .impressed .relative {
     position: relative; }
-    .impressed .relative h3 {
-      color: white;
-      margin-bottom: 60px; }
-    .impressed .relative p {
-      color: #b2b3b3; }
-    .impressed .relative .by-line {
-      color: #b2b3b3;
-      margin-top: 30px; }
-      .impressed .relative .by-line span {
-        font-weight: bold; }
-      .impressed .relative .by-line .contrast-font {
-        font-weight: normal; }
+    @media screen and (max-width: 768px) {
+      .impressed .relative {
+        display: none; } }
     .impressed .relative .mac-comp {
       position: absolute;
+      width: 100%;
       right: 0;
       top: -130px; }
 
@@ -380,7 +389,6 @@ body {
   column-gap: 1.5rem;
   margin: 0 auto; }
   .grid-container .gal-photo {
-    width: 150px;
     margin: 0 10px 10px 0;
     display: inline-block;
     width: 100%;
@@ -434,8 +442,7 @@ body {
   background-image: url("../images/start-pj-bg_03.jpg");
   background-size: cover;
   width: 100%;
-  height: 200px;
-  padding-top: 60px;
+  padding: 60px 15px;
   margin-top: 30px;
   margin-bottom: 100px; }
   .start-pj p {
@@ -530,6 +537,8 @@ body {
       background-color: white;
       padding-top: 50px;
       padding-bottom: 40px; }
+      .team .testimonials .feedback .img-circle {
+        margin-bottom: 10px; }
       .team .testimonials .feedback .owl-dots {
         margin-top: 0; }
       .team .testimonials .feedback .f-16 {
@@ -561,7 +570,8 @@ body {
     .blog h5 .note {
       color: #464646; }
   .blog p {
-    max-width: 600px; }
+    max-width: 600px;
+    margin-right: 20px; }
   .blog .read_more {
     display: inline-block;
     margin-top: 30px;

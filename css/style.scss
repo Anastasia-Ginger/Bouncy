@@ -143,6 +143,7 @@ body {
         margin-bottom: 36px;
         letter-spacing: 10px;
         width: 100%;
+        line-height: 65px;
       }
       p {
         max-width: 620px;
@@ -356,8 +357,15 @@ body {
 }
 .services {
   padding-top: 80px;
+  .row {
+    display: inline-block;
+  }
   .serv-parts {
     padding-bottom: 120px;
+    .nav-tabs{
+      max-width: 80px;
+      display: inline-block;
+    }
     .tabs, .nav, .nav-tabs {
       border-bottom: none;
       li {
@@ -424,30 +432,33 @@ body {
   background-image: url("../images/imressed-bg_02.jpg");
   background-size: cover;
   width: 100%;
-  height: 420px;
   padding-top: 80px;
   padding-bottom: 80px;
+  h3 {
+    color: white;
+    margin-bottom: 60px;
+  }
+  p {
+    color: #b2b3b3;
+  }
+  .by-line {
+    color: #b2b3b3;
+    margin-top: 30px;
+    span {
+      font-weight: bold;
+    }
+    .contrast-font{
+      font-weight: normal;
+    }
+  }
   .relative {
     position: relative;
-    h3 {
-      color: white;
-      margin-bottom: 60px;
-    }
-    p {
-      color: #b2b3b3;
-    }
-    .by-line {
-      color: #b2b3b3;
-      margin-top: 30px;
-      span {
-        font-weight: bold;
-      }
-      .contrast-font{
-        font-weight: normal;
-      }
+    @include max-screen(768px) {
+      display: none;
     }
     .mac-comp {
       position: absolute;
+      width: 100%;
       right: 0;
       top: -130px;
     }
@@ -467,7 +478,6 @@ body {
   column-gap: 1.5rem;
   margin: 0 auto;
   .gal-photo {
-    width: 150px;
     margin: 0 10px 10px 0;
     display: inline-block;
     width: 100%;
@@ -531,8 +541,7 @@ body {
   background-image: url("../images/start-pj-bg_03.jpg");
   background-size: cover;
   width: 100%;
-  height: 200px;
-  padding-top: 60px;
+  padding: 60px 15px;
   margin-top: 30px;
   margin-bottom: 100px;
   p {
@@ -645,6 +654,9 @@ body {
       background-color: white;
       padding-top: 50px;
       padding-bottom: 40px;
+      .img-circle{
+        margin-bottom: 10px;
+      }
       .owl-dots{
         margin-top: 0;
       }
@@ -688,6 +700,7 @@ body {
   }
   p {
     max-width: 600px;
+    margin-right: 20px;
   }
   .read_more{
     display: inline-block;

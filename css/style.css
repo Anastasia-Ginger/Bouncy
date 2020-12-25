@@ -214,8 +214,7 @@ body {
 
 .details-about-B {
   background-color: #f3f3f3;
-  padding-top: 78px;
-  padding-bottom: 100px; }
+  padding-top: 78px; }
   .details-about-B .tabs, .details-about-B .nav, .details-about-B .nav-tabs {
     border-bottom: none; }
     .details-about-B .tabs li, .details-about-B .nav li, .details-about-B .nav-tabs li {

@@ -77,12 +77,22 @@ body {
     align-items: center;
     position: relative;
     header {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 100%;
       .navbar-default {
         background-color: transparent;
         border: none;
         background-image: none;
         box-shadow: none;
         padding-top: 30px;
+        .navbar-collapse{
+          @include max-screen(740px) {
+            background-color: rgba(38, 41, 49, 0.8);
+            border-color: #262931;
+          }
+        }
         .button-rounded {
           padding-top: 7px;
           padding-bottom: 7px;
@@ -93,6 +103,12 @@ body {
             &:hover {
               border: 1px solid $contrast-color;
               color: $contrast-color;
+              @include max-screen(414px) {
+                border: none;
+              }
+            }
+            @include max-screen(414px) {
+              border: none;
             }
           }
         }
@@ -106,42 +122,53 @@ body {
           }
         }
       }
-    }
-    h1 {
-      font-family: $title-font;
-      color: white;
-      font-size: 35px;
-      text-align: center;
-      font-weight: 300;
-      margin-top: 34vh;
-      margin-bottom: 36px;
-      letter-spacing: 10px;
-    }
-    p {
-      max-width: 620px;
-      font-size: 16px;
-      color: white;
-      text-align: center;
-      margin: auto;
-      line-height: 26pt;
-      letter-spacing: 1px;
-    }
-    .chevron {
-      position: absolute;
-      width: 36px;
-      height: 36px;
-      border-radius: 50px;
-      background-color: $contrast-color;
-      left: 50%;
-      bottom: 76px;
-      margin-left: -18px;
-      text-align: center;
-      i {
-        color: white;
-        font-size: 16px;
-        padding-top: 12px;
+      .navbar-toggle {
+        border: none;
+        .icon-bar {
+          background-color: white;
+        }
+        &:focus{
+          background-color: transparent;
+        }
       }
     }
+    .main-screen{
+      align-content: center;
+      height: 100%;
+      h1 {
+        font-family: $title-font;
+        color: white;
+        font-size: 35px;
+        font-weight: 300;
+        margin-bottom: 36px;
+        letter-spacing: 10px;
+        width: 100%;
+      }
+      p {
+        max-width: 620px;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        margin: auto;
+        line-height: 26pt;
+        letter-spacing: 1px;
+      }
+      .chevron {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        border-radius: 50px;
+        background-color: $contrast-color;
+        left: 50%;
+        bottom: 76px;
+        margin-left: -18px;
+        text-align: center;
+        i {
+          color: white;
+          font-size: 16px;
+          padding-top: 12px;
+        }
+      }}
     #back-top {
       position: fixed;
       bottom: 5%;
@@ -175,12 +202,14 @@ body {
     margin-bottom: 46px;
   }
   a {
+    display: inline-block;
     border: 1px solid #333b46;
     border-radius: 50px;
     padding: 8px 30px;
     font-size: 16px;
     color: #333b46;
     text-decoration: none;
+    margin-bottom: 20px;
     &:hover {
       border: 1px solid $contrast-color;
       background-color: $contrast-color;
@@ -288,13 +317,14 @@ body {
     background-image: url("../images/green-bg-example_02.jpg");
     background-size: cover;
     width: 100%;
-    height: 114px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     .submit {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 40px;
-      padding-bottom: 40px;
       align-items: center;
+      justify-content: space-between;
+      @include max-screen (768px) {
+        justify-content: center;
+      }
       p {
         color: white;
         font-size: 20px;
@@ -302,14 +332,20 @@ body {
         span {
           font-weight: bold;
         }
+        @include max-screen (768px) {
+          text-align: center;
+        }
       }
       a {
+        display: inline-block;
         border: 1px solid white;
         border-radius: 50px;
         padding: 8px 30px;
         font-size: 16px;
         color: white;
         text-decoration: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
         &:hover {
           background-color: white;
           color: $contrast-color;
@@ -862,5 +898,41 @@ body {
         color: white;
       }
     }
+  }
+}
+footer{
+  background-color: #f3f3f3;
+  padding: 80px 15px;
+  p{
+    margin-top: 24px;
+    margin-bottom: 30px;
+  }
+  .soc-item {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-color: #3b5998;
+    border-radius: 50%;
+    margin: 5px;
+    line-height: 26px;
+    &:hover{
+      background-color: $contrast-color;
+    }
+    i {
+      font-size: 12px;
+      color: white;
+    }
+  }
+  .twitter {
+    background-color: #26a6d1;
+  }
+  .insta {
+    background-color: #0e76a8;
+  }
+  .linkedin{
+    background-color: #0e76a8;
+  }
+  .vimeo{
+    background-color: #86c9ef;
   }
 }

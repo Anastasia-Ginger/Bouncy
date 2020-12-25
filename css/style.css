@@ -36,6 +36,25 @@ p {
 .j-content-center {
   justify-content: center; }
 
+.j-space-betw {
+  justify-content: space-between; }
+
+.form-control {
+  width: 100%;
+  border-radius: 0px;
+  border: 1px solid #81868e;
+  height: 40px;
+  -webkit-box-shadow: none;
+  outline: none;
+  background-color: transparent; }
+
+.btn {
+  border-radius: 0px;
+  background-color: #19bd9a;
+  color: white;
+  border: none;
+  font-weight: 300; }
+
 body {
   font-family: "Open Sans", sans-serif; }
   body .main_page {
@@ -609,27 +628,79 @@ body {
     max-width: 360px;
     width: 100%; }
     .subscribe .form-group .form-control {
-      width: 100%;
-      background-color: transparent;
-      border-radius: 0px;
-      border: 1px solid #81868e;
-      height: 40px;
       color: white;
-      -webkit-box-shadow: none; }
+      width: 100%;
+      -webkit-box-shadow: none;
+      outline: none; }
   .subscribe .btn {
-    border-radius: 0px;
     margin-left: 8px;
     height: 40px;
-    background-color: #19bd9a;
-    color: white;
     max-width: 152px;
-    width: 100%;
-    border: none;
-    font-weight: 300; }
+    width: 100%; }
+    .subscribe .btn:hover {
+      background-color: transparent;
+      border: 1px solid #19bd9a;
+      color: white; }
 
 .contact .our_contacts {
   background-color: #f3f3f3;
   padding-top: 50px;
   padding-bottom: 90px; }
+.contact .contact-info {
+  display: inline-block;
+  max-width: 280px;
+  height: 274px;
+  background-color: white;
+  margin: 20px; }
+  .contact .contact-info:hover img {
+    filter: grayscale(0); }
+  .contact .contact-info img {
+    width: 100%;
+    margin-bottom: 20px;
+    filter: grayscale(100%);
+    transition: 0.5s; }
+  .contact .contact-info p {
+    line-height: 20px; }
+.contact form {
+  margin-top: 80px;
+  margin-bottom: 110px; }
+.contact .form-group {
+  width: 30%; }
+  @media screen and (max-width: 414px) {
+    .contact .form-group {
+      width: 100%; } }
+.contact .form-control {
+  border: 1px solid #d8dce0;
+  resize: none;
+  margin-bottom: 30px;
+  -webkit-box-shadow: none;
+  outline: none; }
+.contact .btn {
+  height: 54px;
+  width: 100%;
+  font-weight: 400; }
+  .contact .btn:hover {
+    background-color: transparent;
+    border: 1px solid #19bd9a;
+    color: #19bd9a; }
+.contact .map {
+  height: 494px;
+  position: relative;
+  margin: auto;
+  transition: 1s; }
+  .contact .map:hover .map-hover {
+    opacity: 0; }
+  .contact .map .map-hover {
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(21, 21, 21, 0.85);
+    align-content: center;
+    transition: 1s; }
+    .contact .map .map-hover h3 {
+      color: white; }
 
 /*# sourceMappingURL=style.css.map */

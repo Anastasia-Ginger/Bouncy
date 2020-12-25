@@ -744,7 +744,8 @@ body {
   padding-top: 50px;
   padding-bottom: 90px;
   .offer-price{
-    width: 236px;
+    max-width: 236px;
+    width: 100%;
     display: inline-block;
     height: 300px;
     background-color: white;

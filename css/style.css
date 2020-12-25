@@ -5,6 +5,25 @@
 @import url(https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css);
 @import url(https://resources/demos/style.css);
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap");
+@keyframes wobble-vertical-on-hover {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px); }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px); }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
 h3 {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
@@ -63,6 +82,9 @@ body {
     background-size: cover;
     align-items: center;
     position: relative; }
+    @media screen and (max-width: 768px) {
+      body .main_page {
+        background-image: url("../images/main-bg-mobile.jpg"); } }
     body .main_page header {
       position: absolute;
       top: 0px;
@@ -84,20 +106,26 @@ body {
           body .main_page header .navbar-default .button-rounded a {
             border: 1px solid white;
             border-radius: 50px;
-            padding: 8px 20px; }
+            padding: 8px 20px;
+            text-shadow: none; }
             body .main_page header .navbar-default .button-rounded a:hover {
               border: 1px solid #19bd9a;
               color: #19bd9a; }
               @media screen and (max-width: 414px) {
                 body .main_page header .navbar-default .button-rounded a:hover {
                   border: none; } }
+            body .main_page header .navbar-default .button-rounded a:focus {
+              border: 1px solid #19bd9a; }
             @media screen and (max-width: 414px) {
               body .main_page header .navbar-default .button-rounded a {
                 border: none; } }
         body .main_page header .navbar-default li a {
           font-size: 16px;
-          color: white; }
+          color: white;
+          text-shadow: none; }
           body .main_page header .navbar-default li a:hover {
+            color: #19bd9a; }
+          body .main_page header .navbar-default li a:focus {
             color: #19bd9a; }
       body .main_page header .navbar-toggle {
         border: none; }
@@ -139,6 +167,9 @@ body {
           color: white;
           font-size: 16px;
           padding-top: 12px; }
+    body .main_page .wobble-vertical-on-hover:hover, body .main_page .wobble-vertical-on-hover:focus, body .main_page .wobble-vertical-on-hover:active {
+      animation: wobble-vertical-on-hover 1s ease-in-out;
+      animation-iteration-count: 1; }
     body .main_page #back-top {
       position: fixed;
       bottom: 5%;
@@ -185,22 +216,32 @@ body {
   background-color: #f3f3f3;
   padding-top: 78px;
   padding-bottom: 100px; }
-  .details-about-B .items {
-    margin-bottom: 60px; }
-    .details-about-B .items div {
+  .details-about-B .tabs, .details-about-B .nav, .details-about-B .nav-tabs {
+    border-bottom: none; }
+    .details-about-B .tabs li, .details-about-B .nav li, .details-about-B .nav-tabs li {
       display: inline-block;
-      width: 54px;
-      height: 54px;
-      background-color: #81868e;
-      border-radius: 50%;
-      margin: 0px 13px;
-      text-align: center; }
-      .details-about-B .items div i {
-        font-size: 30px;
-        color: white;
-        padding-top: 12px; }
-    .details-about-B .items .contrast-bg {
-      background-color: #19bd9a; }
+      float: none;
+      margin: 10px 14px; }
+      .details-about-B .tabs li.active a, .details-about-B .nav li.active a, .details-about-B .nav-tabs li.active a {
+        background-color: #19bd9a; }
+        .details-about-B .tabs li.active a:hover, .details-about-B .nav li.active a:hover, .details-about-B .nav-tabs li.active a:hover {
+          background-color: #19bd9a; }
+        .details-about-B .tabs li.active a:focus, .details-about-B .nav li.active a:focus, .details-about-B .nav-tabs li.active a:focus {
+          background-color: #19bd9a; }
+      .details-about-B .tabs li a, .details-about-B .nav li a, .details-about-B .nav-tabs li a {
+        display: block;
+        width: 54px;
+        height: 54px;
+        background-color: #81868e;
+        border-radius: 50%;
+        margin-bottom: 18px;
+        text-align: center;
+        padding: 12px 0px; }
+        .details-about-B .tabs li a.active, .details-about-B .tabs li a:hover, .details-about-B .nav li a.active, .details-about-B .nav li a:hover, .details-about-B .nav-tabs li a.active, .details-about-B .nav-tabs li a:hover {
+          background-color: #19bd9a; }
+        .details-about-B .tabs li a i, .details-about-B .nav li a i, .details-about-B .nav-tabs li a i {
+          font-size: 30px;
+          color: white; }
   .details-about-B h4 {
     font-size: 20px;
     color: #464646;
@@ -300,33 +341,33 @@ body {
   padding-top: 80px; }
   .services .row {
     display: inline-block; }
+  .services .tabs, .services .nav, .services .nav-tabs {
+    border-bottom: none; }
+    .services .tabs li.active a, .services .nav li.active a, .services .nav-tabs li.active a {
+      background-color: #19bd9a; }
+      .services .tabs li.active a:hover, .services .nav li.active a:hover, .services .nav-tabs li.active a:hover {
+        background-color: #19bd9a; }
+      .services .tabs li.active a:focus, .services .nav li.active a:focus, .services .nav-tabs li.active a:focus {
+        background-color: #19bd9a; }
+    .services .tabs li a, .services .nav li a, .services .nav-tabs li a {
+      display: block;
+      width: 54px;
+      height: 54px;
+      background-color: #81868e;
+      border-radius: 50%;
+      margin-bottom: 18px;
+      text-align: center;
+      padding: 12px 0px; }
+      .services .tabs li a.active, .services .tabs li a:hover, .services .nav li a.active, .services .nav li a:hover, .services .nav-tabs li a.active, .services .nav-tabs li a:hover {
+        background-color: #19bd9a; }
+      .services .tabs li a i, .services .nav li a i, .services .nav-tabs li a i {
+        font-size: 30px;
+        color: white; }
   .services .serv-parts {
     padding-bottom: 120px; }
     .services .serv-parts .nav-tabs {
       max-width: 80px;
       display: inline-block; }
-    .services .serv-parts .tabs, .services .serv-parts .nav, .services .serv-parts .nav-tabs {
-      border-bottom: none; }
-      .services .serv-parts .tabs li.active a, .services .serv-parts .nav li.active a, .services .serv-parts .nav-tabs li.active a {
-        background-color: #19bd9a; }
-        .services .serv-parts .tabs li.active a:hover, .services .serv-parts .nav li.active a:hover, .services .serv-parts .nav-tabs li.active a:hover {
-          background-color: #19bd9a; }
-        .services .serv-parts .tabs li.active a:focus, .services .serv-parts .nav li.active a:focus, .services .serv-parts .nav-tabs li.active a:focus {
-          background-color: #19bd9a; }
-      .services .serv-parts .tabs li a, .services .serv-parts .nav li a, .services .serv-parts .nav-tabs li a {
-        display: block;
-        width: 54px;
-        height: 54px;
-        background-color: #81868e;
-        border-radius: 50%;
-        margin-bottom: 18px;
-        text-align: center;
-        padding: 12px 0px; }
-        .services .serv-parts .tabs li a.active, .services .serv-parts .tabs li a:hover, .services .serv-parts .nav li a.active, .services .serv-parts .nav li a:hover, .services .serv-parts .nav-tabs li a.active, .services .serv-parts .nav-tabs li a:hover {
-          background-color: #19bd9a; }
-        .services .serv-parts .tabs li a i, .services .serv-parts .nav li a i, .services .serv-parts .nav-tabs li a i {
-          font-size: 30px;
-          color: white; }
     .services .serv-parts .tab-content h4 {
       font-size: 20px;
       color: #464646;
@@ -562,7 +603,8 @@ body {
     margin-left: 0; }
   .blog h4 {
     color: #e1e4e9;
-    font-size: 20px; }
+    font-size: 20px;
+    padding-left: 1px; }
   .blog h5 {
     font-family: "Roboto", sans-serif;
     color: #81868e;
@@ -773,5 +815,8 @@ footer {
     background-color: #0e76a8; }
   footer .vimeo {
     background-color: #86c9ef; }
+
+#more {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,16 +1,18 @@
-$(document).ready(function () {
-    $('.nav-toggle').click(function () {
-        var collapse_content_selector = $(this).attr('href');
-        var toggle_switch = $(this);
-        $(collapse_content_selector).toggle(function () {
-            if ($(this).css('display') == 'none') {
-                toggle_switch.html('+Read More');
-            } else {
-                toggle_switch.html('Hide text');
-            }
-        });
-    });
-});
+function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "+Read more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Hide text";
+        moreText.style.display = "inline";
+    }
+}
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
         loop:true,
@@ -37,7 +39,47 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 1500);
     });
 });
+$(document).ready(function(){
+    $("#chevron").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 500);
+    });
+});
 
+$(document).ready(function(){
+    $("#button-form").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 500);
+    });
+});
+$(document).ready(function(){
+    $("#button-form_2").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 500);
+    });
+});
+$(document).ready(function(){
+    $("#button-form_3").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 500);
+    });
+});
+$(document).ready(function(){
+    $("#more_info").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 500);
+    });
+});
 (function($) {
     $(function() {
 

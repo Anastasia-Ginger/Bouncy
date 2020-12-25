@@ -13,39 +13,41 @@
 <body>
 <section class="main_page">
     <div class="container text-center main-screen d-flex">
-    <header>
-        <div class="container text-center menu">
-            <nav class="navbar navbar-default">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"><img src="images/logo_white.png" alt="logo"></a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right" id="menu-yak">
-                        <li class="button-rounded"><a href="#">Hello</a></li>
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#Services">Services</a></li>
-                        <li><a href="#Portfolio">Portfolio</a></li>
-                        <li><a href="#Team">Team</a></li>
-                        <li><a href="#Blog">Blog</a></li>
-                        <li><a href="#Contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <div id="back-top">
-            <a href="#" id="up"><i class="fas fa-angle-up"></i></a>
-        </div>
-    </header>
+        <header>
+            <div class="container text-center menu">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="https://anastasia-ginger.github.io/Bouncy/"><img
+                                src="images/logo_white.png" alt="logo"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right" id="menu-yak">
+                            <li class="button-rounded"><a href="#">Hello</a></li>
+                            <li><a href="#About">About</a></li>
+                            <li><a href="#Services">Services</a></li>
+                            <li><a href="#Portfolio">Portfolio</a></li>
+                            <li><a href="#Team">Team</a></li>
+                            <li><a href="#Blog">Blog</a></li>
+                            <li><a href="#Contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div id="back-top">
+                <a href="#" id="up"><i class="fas fa-angle-up"></i></a>
+            </div>
+        </header>
         <h1 class="text-uppercase">We are code cafe</h1>
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
-        <div class="chevron"><i class="fas fa-chevron-down"></i></div>
+        <div id="chevron"><a href="#About" class="chevron wobble-vertical-on-hover"><i class="fas fa-chevron-down"></i></a>
+        </div>
     </div>
 </section>
 <section class="about" id="About">
@@ -57,7 +59,7 @@
                     deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
                     provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
                     fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
-                <a href="#details">Read more</a>
+                <div id="more_info"><a href="#details">Read more</a></div>
             </div>
             <div class="col-md-3 col-md-offset-1 text-center">
                 <img src="images/mobile-phone_03.jpg" alt="image">
@@ -69,45 +71,74 @@
             <h3 class="text-uppercase">DetailS ABOUT BOUNCY</h3>
             <p class="text-center comment">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
                 praesentium</p>
-            <div class="items">
-                <div class="contrast-bg"><i class="far fa-heart"></i></div>
-                <div><i class="fas fa-tablet-alt"></i></div>
-                <div><i class="far fa-lightbulb"></i></div>
+            <div class="text-center">
+                <ul class="nav nav-tabs text-center" role="tablist">
+                    <li role="presentation" class="active"><a href="#like" aria-controls="home" role="tab"
+                                                              data-toggle="tab"><i class="far fa-heart"></i></a></li>
+                    <li role="presentation"><a href="#tablet" aria-controls="profile" role="tab" data-toggle="tab"><i
+                            class="fas fa-tablet-alt"></i></a></li>
+                    <li role="presentation"><a href="#light" aria-controls="messages" role="tab" data-toggle="tab"><i
+                            class="far fa-lightbulb"></i></a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="like">
+                        <div class="row">
+                            <h4 class="col-md-2 col-md-offset-1"> Creative Ideas</h4>
+                        </div>
+                        <div class="row">
+                            <p class="col-md-4 col-md-offset-1 p-16 text-left"> At <span
+                                    class="contrast-font">vero</span> eos et
+                                accusamus et iusto odio dignissimos<span> ducimus </span>qui blanditiis praesentium
+                                voluptatum deleniti atque corrupti quos dolores</p>
+                            <p class="col-md-5 col-md-offset-1 text-left"> At vero eos et accusamus et iusto odio
+                                dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+                                <span> corrupti quos </span>
+                                dolores et quas molestias <span class="contrast-font"> excepturi</span> sint occaecati
+                                cupiditate non provident,<span> similique</span> sunt in culpa qui officia deserunt
+                                mollitia animi, id est laborum et dolorum fuga. Et harum quidem r</p>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tablet">
+                        <div class="row">
+                            <h4 class="col-md-2 col-md-offset-1"> Something</h4>
+                        </div>
+                        <div class="row">
+                            <p class="col-md-8 col-md-offset-1 text-left">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Delectus ipsam quod sint voluptate
+                                voluptatum. A ad amet asperiores eligendi illum libero magnam maxime nisi perferendis
+                                quis reiciendis ullam veritatis, voluptatum?</p>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="light">
+                        <div class="row">
+                            <h4 class="col-md-2 col-md-offset-1"> Hey you</h4>
+                        </div>
+                        <div class="row">
+                            <p class="col-md-8 col-md-offset-1 text-left">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Delectus ipsam quod sint voluptate
+                                voluptatum. A ad amet asperiores eligendi illum libero magnam maxime nisi perferendis
+                                quis reiciendis ullam veritatis, voluptatum?</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <h4 class="col-md-2 col-md-offset-1"> Creative Ideas</h4>
+        <div class="featured-pj">
+            <div class="container text-center">
+                <h3 class="text-uppercase">FEATURED PROJECTS</h3>
+                <p class="text-center comment">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                    praesentium</p>
             </div>
-            <div class="row">
-                <p class="col-md-4 col-md-offset-1 p-16">
-                    At <span class="contrast-font">vero</span> eos et accusamus et iusto odio dignissimos <span> ducimus
-                </span>qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-                </p>
-                <p class="col-md-5 col-md-offset-1"> At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                    blanditiis praesentium voluptatum deleniti atque <span> corrupti quos </span> dolores et quas
-                    molestias <span class="contrast-font"> excepturi</span> sint occaecati cupiditate non provident,
-                    <span> similique
-                </span> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum
-                    quidem r</p>
+            <div class="project-example">
+                <div class="photo-example wide"><img src="images/project-bid_02.jpg" alt="project-example-1"></div>
+                <div class="photo-example"><img src="images/project-2_04.jpg" alt="project-example-2"></div>
+                <div class="photo-example"><img src="images/project-3_03.jpg" alt="project-example-3"></div>
             </div>
-        </div>
-    </div>
-    <div class="featured-pj">
-        <div class="container text-center">
-            <h3 class="text-uppercase">FEATURED PROJECTS</h3>
-            <p class="text-center comment">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                praesentium</p>
-        </div>
-        <div class="project-example">
-            <div class="photo-example wide"><img src="images/project-bid_02.jpg" alt="project-example-1"></div>
-            <div class="photo-example"><img src="images/project-2_04.jpg" alt="project-example-2"></div>
-            <div class="photo-example"><img src="images/project-3_03.jpg" alt="project-example-3"></div>
-        </div>
-        <div class="bg">
-            <div class="container submit d-flex">
-                <p>At vero eos et <span>accusamus</span> et iusto odio dignissimos ducimus qui blanditiis </p>
-                <a href="#">Submit now</a>
+            <div class="bg">
+                <div class="container submit d-flex">
+                    <p>At vero eos et <span>accusamus</span> et iusto odio dignissimos ducimus qui blanditiis </p>
+                    <div id="button-form"><a href="#submit-form">Submit now</a></div>
+                </div>
             </div>
         </div>
     </div>
@@ -118,22 +149,23 @@
         <p class="text-center comment">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
             praesentium</p>
         <div class="row serv-parts">
-                <div class="col-xs-3">
-                    <ul class="nav nav-tabs tabs sideways">
-                        <li class="active"><a href="#first-serv" data-toggle="tab"><i class="fas fa-headset"></i></a>
-                        </li>
-                        <li><a href="#second-serv" data-toggle="tab"><i class="fas fa-paint-roller"></i></a></li>
-                        <li><a href="#third-serv" data-toggle="tab"><i class="fas fa-gamepad"></i></a></li>
-                        <li><a href="#fourth-serv" data-toggle="tab"><i class="fas fa-plug"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-9">
-                    <div class="tab-content">
-                        <div class="tab-pane active text-left" id="first-serv">
-                            <div class="row">
+            <div class="col-xs-3">
+                <ul class="nav nav-tabs tabs sideways">
+                    <li class="active"><a href="#first-serv" data-toggle="tab"><i class="fas fa-headset"></i></a>
+                    </li>
+                    <li><a href="#second-serv" data-toggle="tab"><i class="fas fa-paint-roller"></i></a></li>
+                    <li><a href="#third-serv" data-toggle="tab"><i class="fas fa-gamepad"></i></a></li>
+                    <li><a href="#fourth-serv" data-toggle="tab"><i class="fas fa-plug"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-xs-9">
+                <div class="tab-content">
+                    <div class="tab-pane active text-left" id="first-serv">
+                        <div class="row">
                             <div class="col-md-6">
                                 <h4>Graphic Design</h4>
-                                <p class="p-16">At vero eos et <span class="contrast-font"> accusamus </span>et iusto odio
+                                <p class="p-16">At vero eos et <span class="contrast-font"> accusamus </span>et iusto
+                                    odio
                                     dignissimos <span>ducimus</span> qui blanditiis praesentium </p>
                                 <p> quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
                                     <span class="contrast-font"> similique sunt </span> in culpa qui officia deserunt
@@ -148,31 +180,31 @@
                                 <div class="percents"><img src="images/percent_03.jpg">
                                     <p class="text-center">Branding</p></div>
                             </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane text-left" id="second-serv">
-                            <h4>Another one</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, aperiam at corporis
-                                cupiditate
-                                dolorum eos fugiat incidunt, labore laboriosam magnam maiores nobis obcaecati odit omnis
-                                perferendis provident quos sint, ut.</p>
-                        </div>
-                        <div class="tab-pane text-left" id="third-serv">
-                            <h4>Your ad could be here</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corporis cumque dele
-                                niti dignissimos dolores doloribus exercitationem magnam minus necessitatibus nemo
-                                nostrum,
-                                perspiciatis quis soluta tempora, ut. Ab ipsa iste libero?</p>
-                        </div>
-                        <div class="tab-pane text-left" id="fourth-serv">
-                            <h4>Last one</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At explicabo fugit non nulla
-                                odio
-                                officiis quaerat rerum sapiente. Aperiam aspernatur ea esse hic illo maiores modi odio
-                                quam ratione saepe?</p>
                         </div>
                     </div>
+                    <div class="tab-pane text-left" id="second-serv">
+                        <h4>Another one</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, aperiam at corporis
+                            cupiditate
+                            dolorum eos fugiat incidunt, labore laboriosam magnam maiores nobis obcaecati odit omnis
+                            perferendis provident quos sint, ut.</p>
+                    </div>
+                    <div class="tab-pane text-left" id="third-serv">
+                        <h4>Your ad could be here</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corporis cumque dele
+                            niti dignissimos dolores doloribus exercitationem magnam minus necessitatibus nemo
+                            nostrum,
+                            perspiciatis quis soluta tempora, ut. Ab ipsa iste libero?</p>
+                    </div>
+                    <div class="tab-pane text-left" id="fourth-serv">
+                        <h4>Last one</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At explicabo fugit non nulla
+                            odio
+                            officiis quaerat rerum sapiente. Aperiam aspernatur ea esse hic illo maiores modi odio
+                            quam ratione saepe?</p>
+                    </div>
                 </div>
+            </div>
         </div>
 
     </div>
@@ -347,7 +379,7 @@
         <div class="start-pj text-center">
             <p>At vero eos et <strong>accusamus</strong> et iusto odio <strong>dignissimos</strong> ducimus qui
                 blanditiis </p>
-            <a href="#">Start project</a>
+            <div id="button-form_2"><a href="#submit-form">Start project</a></div>
         </div>
     </div>
 </section>
@@ -466,7 +498,7 @@
     </div>
     <div class="bg-img text-center">
         <p>Already Loved Us? Let’s talk!</p>
-        <a href="#">Contact us</a>
+        <div id="button-form_3"><a href="#submit-form">Contact us</a></div>
     </div>
     <div class="testimonials">
         <div class="container">
@@ -474,45 +506,45 @@
             <p class="text-center comment">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
                 praesentium</p>
             <div class="owl-carousel feedback container">
-                    <div class="row">
-                        <div class="col-md-2 col-md-offset-1"><img class="img-circle" src="images/testimonial_11.jpg"
-                                                                   alt=""></div>
-                        <div class="col-md-8"><p class="f-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Atque aut cum dignissimos
-                            dolorum ea eius, enim et eveniet exercitationem iusto laboriosam magnam porro quia, quidem
-                            quod,
-                            reprehenderit saepe ut. Aliquam!<br> <br>
-                            <strong class="text-uppercase contrast-font">Partho</strong> <br>
-                            <span class="text-uppercase">FOUNDER, ARTWAYS BD</span>
-                        </p>
-                        </div>
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-1"><img class="img-circle" src="images/testimonial_11.jpg"
+                                                               alt=""></div>
+                    <div class="col-md-8"><p class="f-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Atque aut cum dignissimos
+                        dolorum ea eius, enim et eveniet exercitationem iusto laboriosam magnam porro quia, quidem
+                        quod,
+                        reprehenderit saepe ut. Aliquam!<br> <br>
+                        <strong class="text-uppercase contrast-font">Partho</strong> <br>
+                        <span class="text-uppercase">FOUNDER, ARTWAYS BD</span>
+                    </p>
                     </div>
-                    <div class="row">
-                        <div class="col-md-2 col-md-offset-1"><img class="img-circle" src="images/testimonial_11.jpg"
-                                                                   alt=""></div>
-                        <div class="col-md-8"><p class="f-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Atque aut cum dignissimos
-                            dolorum ea eius, enim et eveniet exercitationem iusto laboriosam magnam porro quia, quidem
-                            quod,
-                            reprehenderit saepe ut. Aliquam!<br> <br>
-                            <strong class="text-uppercase contrast-font">Partho</strong> <br>
-                            <span class="text-uppercase">FOUNDER, ARTWAYS BD</span>
-                        </p>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-1"><img class="img-circle" src="images/testimonial_11.jpg"
+                                                               alt=""></div>
+                    <div class="col-md-8"><p class="f-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Atque aut cum dignissimos
+                        dolorum ea eius, enim et eveniet exercitationem iusto laboriosam magnam porro quia, quidem
+                        quod,
+                        reprehenderit saepe ut. Aliquam!<br> <br>
+                        <strong class="text-uppercase contrast-font">Partho</strong> <br>
+                        <span class="text-uppercase">FOUNDER, ARTWAYS BD</span>
+                    </p>
                     </div>
-                    <div class="row">
-                        <div class="col-md-2 col-md-offset-1"><img class="img-circle" src="images/testimonial_11.jpg"
-                                                                   alt=""></div>
-                        <div class="col-md-8"><p class="f-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Atque aut cum dignissimos
-                            dolorum ea eius, enim et eveniet exercitationem iusto laboriosam magnam porro quia, quidem
-                            quod,
-                            reprehenderit saepe ut. Aliquam!<br> <br>
-                            <strong class="text-uppercase contrast-font">Partho</strong> <br>
-                            <span class="text-uppercase">FOUNDER, ARTWAYS BD</span>
-                        </p>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-1"><img class="img-circle" src="images/testimonial_11.jpg"
+                                                               alt=""></div>
+                    <div class="col-md-8"><p class="f-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Atque aut cum dignissimos
+                        dolorum ea eius, enim et eveniet exercitationem iusto laboriosam magnam porro quia, quidem
+                        quod,
+                        reprehenderit saepe ut. Aliquam!<br> <br>
+                        <strong class="text-uppercase contrast-font">Partho</strong> <br>
+                        <span class="text-uppercase">FOUNDER, ARTWAYS BD</span>
+                    </p>
                     </div>
+                </div>
             </div>
         </div>
     </div>
@@ -530,13 +562,14 @@
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
                     deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
                     provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
-                    fuga. Et harum quidem rerum facilis est et expedita distinctio...
-                </p>
-                <p id="collapse" class="hidden-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Accusantium atque cupiditate eaque eveniet
-                    facilis hic molestias necessitatibus nemo nisi nulla obcaecati placeat possimus, quasi quisquam
-                    repellendus reprehenderit ut vel voluptate.</p>
-                <a href="#collapse" class="nav-toggle read_more">+ Read More</a>
+                    fuga. Et harum quidem rerum facilis est et expedita distinctio<span id="dots">...</span><span
+                            id="more">
+                        erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae
+                        massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum
+                        dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+                        tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh
+                        tempor porta.</span></p>
+                <a onclick="myFunction()" id="myBtn" class="nav-toggle read_more">+ Read More</a>
             </div>
             <div><h4>New Topic</h4>
                 <h5 class="text-uppercase">by <span class="contrast-font">Kabir Uddin</span> <br><br>
@@ -637,7 +670,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container" id="submit-form">
         <div class="row">
             <form class="col-md-10 col-md-offset-1 d-flex j-space-betw">
                 <div class="form-group">
@@ -659,17 +692,18 @@
                 width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                 tabindex="0"></iframe>
         <div class="map-hover d-flex j-content-center">
-            <h3 class="text-uppercase">find us on the map  <i class="fas fa-check-circle contrast-font"></i></h3>
+            <h3 class="text-uppercase">find us on the map <i class="fas fa-check-circle contrast-font"></i></h3>
         </div>
     </div>
 </section>
 <footer class="text-center">
-    <a href="#"><img src="images/logo_black_14.png" alt="logo"></a>
+    <a href="https://anastasia-ginger.github.io/Bouncy/"><img src="images/logo_black_14.png" alt="logo"></a>
     <p>Copyright 2015. All rights Reserved</p>
     <div class="soc">
         <a href="#" title="" target="_blank" class="text-center soc-item"><i class="fab fa-facebook-f"></i></a>
         <a href="#" title="" target="_blank" class="text-center soc-item twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" title="" target="_blank" class="text-center soc-item linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" title="" target="_blank" class="text-center soc-item linkedin"><i
+                class="fab fa-linkedin-in"></i></a>
         <a href="#" title="" target="_blank" class="text-center soc-item insta"><i class="fab fa-instagram"></i></a>
         <a href="#" title="" target="_blank" class="text-center soc-item vimeo"><i class="fab fa-vimeo-v"></i></a>
     </div>

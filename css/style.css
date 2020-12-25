@@ -245,7 +245,8 @@ body {
     font-size: 20px;
     color: #464646;
     margin-bottom: 40px;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    text-align: left; }
   .details-about-B .p-16 {
     font-size: 16px; }
   .details-about-B span {

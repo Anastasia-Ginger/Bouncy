@@ -8,10 +8,9 @@
     <title>Bouncy</title>
     <script src="https://kit.fontawesome.com/b7b8f8e213.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/scripts.js"></script>
 </head>
 <body>
-<section class="main_page">
+<div class="main_page">
     <div class="container text-center main-screen d-flex">
         <header>
             <div class="container text-center menu">
@@ -29,7 +28,7 @@
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right" id="menu-yak">
-                            <li class="button-rounded"><a href="#">Hello</a></li>
+                            <li><a href="#">Hello</a></li>
                             <li><a href="#About">About</a></li>
                             <li><a href="#Services">Services</a></li>
                             <li><a href="#Portfolio">Portfolio</a></li>
@@ -49,13 +48,13 @@
         <div id="chevron"><a href="#About" class="chevron wobble-vertical-on-hover"><i class="fas fa-chevron-down"></i></a>
         </div>
     </div>
-</section>
+</div>
 <section class="about" id="About">
     <div class="container this-is-bouncy">
         <div class="row">
-            <div class="col-md-6 col-md-offset-1">
+            <div class="col-md-6 col-md-offset-1 mobile-center">
                 <h3 class="text-uppercase">This is Bouncy</h3>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                <p class="text-left">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
                     deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
                     provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
                     fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
@@ -183,11 +182,37 @@
                                     animi, id est laborum et dolorum fuga. </p>
                             </div>
                             <div class="right-part col-md-6">
-                                <div class="percents"><img src="images/percent_03.jpg">
+                                <div class="percents text-center">
+                                    <svg viewBox="0 0 36 36" class="circular-chart">
+                                        <path class="circle-bg"
+                                              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path class="circle"
+                                              stroke-dasharray="60, 100"
+                                              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <text x="18" y="20.35" class="percentage">60%</text>
+                                    </svg>
+                                    <p>Branding</p>
+                                </div>
+                                <div class="percents">
+                                    <svg viewBox="0 0 36 36" class="circular-chart">
+                                        <path class="circle-bg"
+                                              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path class="circle"
+                                              stroke-dasharray="75, 100"
+                                              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <text x="18" y="20.35" class="percentage">75%</text>
+                                    </svg>
                                     <p class="text-center">Branding</p></div>
-                                <div class="percents"><img src="images/percent_03.jpg">
-                                    <p class="text-center">Branding</p></div>
-                                <div class="percents"><img src="images/percent_03.jpg">
+                                <div class="percents">
+                                    <svg viewBox="0 0 36 36" class="circular-chart">
+                                        <path class="circle-bg"
+                                              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path class="circle"
+                                              stroke-dasharray="90, 100"
+                                              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                        />
+                                        <text x="18" y="20.35" class="percentage">90%</text>
+                                    </svg>
                                     <p class="text-center">Branding</p></div>
                             </div>
                         </div>
@@ -222,7 +247,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h3 class="text-uppercase">Impressed?</h3>
+                    <h3 class="text-uppercase mobile-center">Impressed?</h3>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
                         deleniti atque corrupti quos dolores et quas molestias</p>
                     <p class="by-line text-uppercase"><span>- Abdullah Noman</span><br>
@@ -401,7 +426,7 @@
         <div class="owl-carousel">
             <div class="row">
                 <div class="col-md-3 col-md-offset-1"><img src="images/creative_director_07.jpg"></div>
-                <div class="col-md-4 col-md-offset-3 text-right">
+                <div class="col-md-4 col-md-offset-3 text-right scrollbar">
                     <p class="person-name">Abdullah Noman <br>
                         <em class="text-uppercase f-14">Creative Director, Code Cafe</em></p>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
@@ -432,11 +457,17 @@
                              aria-valuemax="100" style="width: 75%;">
                         </div>
                     </div>
+                    <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi hic magnam quasi! Ad,
+                        necessitatibus, perspiciatis! Cum cumque nihil nisi obcaecati vero. Adipisci debitis deleniti
+                        dicta quod, tenetur vero. Mollitia, porro?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi hic magnam quasi! Ad,
+                        necessitatibus, perspiciatis! Cum cumque nihil nisi obcaecati vero. Adipisci debitis deleniti
+                        dicta quod, tenetur vero. Mollitia, porro?</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 col-md-offset-1"><img src="images/another_photo_07.jpg"></div>
-                <div class="col-md-4 col-md-offset-3 text-right">
+                <div class="col-md-4 col-md-offset-3 text-right scrollbar">
                     <p class="person-name">Name Surname <br>
                         <em class="text-uppercase f-14">Creative Director, Code Cafe</em></p>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
@@ -467,11 +498,17 @@
                              aria-valuemax="100" style="width: 75%;">
                         </div>
                     </div>
+                    <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi hic magnam quasi! Ad,
+                        necessitatibus, perspiciatis! Cum cumque nihil nisi obcaecati vero. Adipisci debitis deleniti
+                        dicta quod, tenetur vero. Mollitia, porro?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi hic magnam quasi! Ad,
+                        necessitatibus, perspiciatis! Cum cumque nihil nisi obcaecati vero. Adipisci debitis deleniti
+                        dicta quod, tenetur vero. Mollitia, porro?</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 col-md-offset-1"><img src="images/another_photo_07.jpg"></div>
-                <div class="col-md-4 col-md-offset-3 text-right">
+                <div class="col-md-4 col-md-offset-3 text-right scrollbar">
                     <p class="person-name">Another name <br>
                         <em class="text-uppercase f-14">Creative Director, Code Cafe</em></p>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
@@ -502,6 +539,12 @@
                              aria-valuemax="100" style="width: 75%;">
                         </div>
                     </div>
+                    <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi hic magnam quasi! Ad,
+                        necessitatibus, perspiciatis! Cum cumque nihil nisi obcaecati vero. Adipisci debitis deleniti
+                        dicta quod, tenetur vero. Mollitia, porro?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi hic magnam quasi! Ad,
+                        necessitatibus, perspiciatis! Cum cumque nihil nisi obcaecati vero. Adipisci debitis deleniti
+                        dicta quod, tenetur vero. Mollitia, porro?</p>
                 </div>
             </div>
         </div>
@@ -561,7 +604,7 @@
 </section>
 <section class="blog" id="Blog">
     <div class="container">
-        <h3 class="text-uppercase">Latest news</h3>
+        <h3 class="text-uppercase mobile-center">Latest news</h3>
         <p class="comment">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
             praesentium</p>
         <div class="owl-carousel">

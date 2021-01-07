@@ -93,6 +93,11 @@ p {
   border: none;
   font-weight: 300;
 }
+.mobile-center {
+  @include max-screen(768px) {
+    text-align: center;
+  }
+}
 
 body {
   font-family: $main-font;
@@ -118,43 +123,32 @@ body {
         padding-top: 30px;
         .navbar-collapse{
           @include max-screen(740px) {
-            background-color: rgba(38, 41, 49, 0.8);
+            background-color: rgba(38, 41, 49, 0.9);
             border-color: #262931;
           }
         }
-        .button-rounded {
+        li {
           padding-top: 7px;
           padding-bottom: 7px;
-          a {
-            border: 1px solid white;
-            border-radius: 50px;
-            padding: 8px 20px;
-            text-shadow: none;
-            &:hover {
-              border: 1px solid $contrast-color;
-              color: $contrast-color;
-              @include max-screen(414px) {
-                border: none;
-              }
-            }
-            &:focus{
-              border: 1px solid $contrast-color
-            }
-            @include max-screen(414px) {
-              border: none;
-            }
-          }
-        }
-        li {
           a {
             font-size: 16px;
             color: white;
             text-shadow: none;
+            border: 1px solid transparent;
+            border-radius: 50px;
+            padding: 8px 18px;
+            @include max-screen(823px) {
+              padding: 8px 15px;
+            }
             &:hover {
-              color: $contrast-color;
+              border: 1px solid white;
+              color: white;
+              @include max-screen(768px) {
+                border: none;
+              }
             }
             &:focus{
-              color: $contrast-color;
+              color: white;
             }
           }
         }
@@ -164,7 +158,7 @@ body {
         .icon-bar {
           background-color: white;
         }
-        &:focus{
+        &:focus, &:hover{
           background-color: transparent;
         }
       }
@@ -631,15 +625,20 @@ body {
     .f-14 {
       font-size: 14px;
     }
-    &:after {
-      content: "";
+  }
+  .scrollbar {
+    height: 300px;
+    overflow-y: scroll;
+    padding-right: 30px;
+    @include max-screen (812px) {
+      margin: 15px 18px 0px;
+    }
+    &::-webkit-scrollbar {
+      width: 6px;
+      background-color: #F5F5F5;
+    }
+    &::-webkit-scrollbar-thumb {
       background-color: $contrast-color;
-      height: 80%;
-      width: 4px;
-      display: block;
-      position: absolute;
-      top: 10%;
-      right: -40px;
     }
   }
   .owl-dots{
@@ -813,6 +812,10 @@ body {
     &:hover .price-hover {
       opacity: 1;
     }
+    @include max-screen(414px) {
+      margin: 15px;
+      max-width: none;
+    }
     h4{
       display: inline-block;
       font-size: 20px;
@@ -860,8 +863,7 @@ body {
       padding-top: 26px;
       padding-bottom: 26px;
       &:hover{
-        color: $contrast-color;
-        background-color: white;
+        color: #044548;
       }
     }
   }
@@ -878,6 +880,9 @@ body {
   .form-group{
     max-width: 360px;
     width: 100%;
+    @include max-screen(414px) {
+      max-width: none;
+    }
     .form-control{
       color: white;
       width: 100%;
@@ -895,6 +900,14 @@ body {
       border: 1px solid $contrast-color;
       color: white;
     }
+    @include max-screen(768px) {
+      margin-left: 0px;
+      max-width: 360px;
+      margin-top: 16px;
+    }
+    @include max-screen(414px) {
+      max-width: none;
+    }
   }
 }
 .contact {
@@ -911,6 +924,10 @@ body {
     margin: 20px;
     &:hover img {
       filter: grayscale(0);
+    }
+    @include max-screen(414px) {
+      margin: 20px 0px;
+      max-width: none;
     }
     img {
       width: 100%;
@@ -1010,6 +1027,36 @@ footer{
   }
 }
 #more {display: none;}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+.circle-bg {
+  fill: none;
+  stroke: #046165;
+  stroke-width: 1;
+}
+.circle {
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+  stroke: $contrast-color;
+}
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0,100;
+  }
+}
+.percentage {
+  fill: #81868e;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
 
 
 
